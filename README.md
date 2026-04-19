@@ -1,6 +1,6 @@
 # BankBridge for Claude Code
 
-> **Your bank accounts, transactions, and investments — in plain English, right inside Claude Code.**
+> **Your bank accounts, transactions, and investments — in plain English, right inside Claude.**
 
 Ask Claude things like *"how much did I spend on restaurants last month?"* or *"find any subscriptions I've forgotten about"* or *"draft a budget from my actual last 3 months"* — and get real answers from your real data.
 
