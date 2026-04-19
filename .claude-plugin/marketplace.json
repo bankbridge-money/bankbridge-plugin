@@ -1,0 +1,14 @@
+{
+  "name": "bankbridge",
+  "owner": {
+    "name": "BankBridge",
+    "url": "https://bankbridge.money"
+  },
+  "plugins": [
+    {
+      "name": "bankbridge",
+      "source": ".",
+      "description": "Ask Claude Code anything about your finances. Read-only access to your bank accounts, transactions, and investment holdings."
+    }
+  ]
+}

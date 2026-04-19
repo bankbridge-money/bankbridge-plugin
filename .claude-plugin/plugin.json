@@ -1,0 +1,20 @@
+{
+  "name": "bankbridge",
+  "version": "0.1.0",
+  "description": "Ask Claude Code anything about your finances. Read-only access to your bank accounts, transactions, and investment holdings via BankBridge.",
+  "homepage": "https://bankbridge.money",
+  "author": {
+    "name": "BankBridge",
+    "url": "https://bankbridge.money"
+  },
+  "license": "MIT",
+  "userConfig": {
+    "api_token": {
+      "type": "string",
+      "title": "BankBridge API token",
+      "description": "Pre-filled on your bankbridge.money dashboard. Starts with bbk_.",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}
