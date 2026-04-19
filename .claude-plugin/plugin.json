@@ -1,6 +1,6 @@
 {
   "name": "bankbridge",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Ask Claude Code anything about your finances. Read-only access to your bank accounts, transactions, and investment holdings via BankBridge.",
   "homepage": "https://bankbridge.money",
   "author": {

@@ -4,6 +4,9 @@
     "name": "BankBridge",
     "url": "https://bankbridge.money"
   },
+  "metadata": {
+    "description": "Your bank accounts, transactions, and investments — in plain English, inside Claude Code. 19 slash commands, 12 MCP tools. Read-only, zero-cache."
+  },
   "plugins": [
     {
       "name": "bankbridge",
