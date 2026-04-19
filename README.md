@@ -1,4 +1,4 @@
-# BankBridge for Claude Code
+# BankBridge for Claude
 
 > **Your bank accounts, transactions, and investments — in plain English, right inside Claude.**
 
