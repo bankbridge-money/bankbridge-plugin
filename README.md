@@ -19,7 +19,7 @@ When prompted, paste your API token from [**bankbridge.money/dashboard**](https:
 
 You&rsquo;ll need:
 - **A BankBridge account** — [sign up](https://bankbridge.money) ($5/mo per connected bank)
-- **At least one bank connected** — linked via Plaid on the dashboard in ~30 seconds
+- **At least one bank connected** — linked on the dashboard in ~30 seconds
 
 That&rsquo;s it. The plugin handles the rest.
 
@@ -28,6 +28,8 @@ That&rsquo;s it. The plugin handles the rest.
 ## 19 slash commands, included
 
 Type `/` in any Claude Code session to find them. Each wraps a multi-step flow with an opinionated output shape, so you don&rsquo;t have to hand-craft the prompt.
+
+> **Also in Claude iOS / Android / Desktop / Cowork.** The same 19 commands are exposed as MCP prompts, so they appear under the **+** button in the chat input bar — one tap fills the full prompt. In Cursor, ChatGPT, and other MCP clients, they show up in whatever prompt-picker UI that client provides.
 
 ### 💨 Quick lookups — fastest path from install to first result
 
@@ -145,7 +147,7 @@ Claude Code picks these automatically based on your question. You never have to 
 | `get_recurring_charges` | Detected subscriptions with merchant, amount, frequency |
 | `get_monthly_cashflow` | Income vs expenses for a given month, top sources |
 | `get_merchant_history` | Full charge history for a merchant with stats |
-| `list_categories` | Plaid categories present in your data |
+| `list_categories` | Spending categories present in your data |
 | `list_holdings` | Current investment positions with gain/loss |
 | `list_investment_transactions` | Buys, sells, dividends, fees |
 | `connect_bank` | Deep-link into a bank-connect flow when no banks are connected |
@@ -156,17 +158,17 @@ All **read-only**. BankBridge literally can&rsquo;t move money, change passwords
 
 ## Privacy & security
 
-Your transactions live at your bank. **We never store them.**
+Your transactions never touch our servers. **We never store them.**
 
 | | |
 |---|---|
-| **We don&rsquo;t keep your data** | Every question your agent asks live-fetches in real time. No transaction cache. No query log. |
-| **Read-only access** | We can see your transactions. We can&rsquo;t move money. |
-| **Bank-grade encryption** | AES-256-GCM for access tokens at rest. TLS 1.3 for everything else. |
-| **Revocable in seconds** | Cancel or delete your account anytime — your bank access is revoked and deleted from our servers within seconds. |
+| **We don&rsquo;t keep your data** | Every question your agent asks live-fetches in real time. No transaction cache, and no record of what you asked or what came back. |
+| **Read-only access** | Your agent can read balances and transactions. Nothing can move money, pay a bill, or change your accounts. |
+| **Bank-grade encryption** | AES-256-GCM for access tokens at rest. HTTPS everywhere. |
+| **Revocable right away** | Disconnect a bank or delete your account anytime, and the connection is revoked and deleted right away. |
 | **Trusted banking rails** | Same infrastructure Venmo and Robinhood rely on. |
 
-No mainstream competitor can say "we never store your transactions" — most cache your financial history server-side for speed. BankBridge re-fetches on every question instead. Slightly slower, dramatically more private.
+BankBridge re-fetches on every question instead of caching your financial history. Details: [bankbridge.money/security](https://bankbridge.money/security).
 
 Full privacy policy → [bankbridge.money/privacy](https://bankbridge.money/privacy)
 
@@ -190,7 +192,7 @@ No free tier, no freemium, no trial. Just $5 per bank — it&rsquo;s fair, predi
 
 1. Create an account (magic-link email, no password).
 2. Click **Subscribe — $5/mo**. Any major card works.
-3. Connect a bank via Plaid in ~30 seconds.
+3. Connect a bank in ~30 seconds.
 4. Copy your API token from the dashboard.
 5. `/plugin install bankbridge` in Claude Code, paste the token.
 6. Ask your first question.
@@ -224,5 +226,5 @@ BankBridge works everywhere MCP works:
 ---
 
 <p align="center">
-  <sub>Built by <a href="https://greatwork.company">Great Work LLC</a>. Powered by Plaid. Not a bank, not a broker — just a bridge.</sub>
+  <sub>Built by <a href="https://greatwork.company">Great Work LLC</a>. Not a bank, not a broker — just a bridge.</sub>
 </p>

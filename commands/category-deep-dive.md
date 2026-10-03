@@ -4,7 +4,7 @@ description: Pick a category, get every transaction in it plus patterns — freq
 
 You have access to BankBridge MCP tools. The user wants to zoom in on ONE category.
 
-`$ARGUMENTS` should be the category name (Plaid uses uppercase underscore names like `FOOD_AND_DRINK`, `TRANSPORTATION`, `GENERAL_MERCHANDISE`). If the user typed a friendly name ("food", "restaurants", "groceries") map it to the closest Plaid category. If unclear, run `list_categories` first and ask which they meant.
+`$ARGUMENTS` should be the category name (BankBridge uses uppercase underscore names like `FOOD_AND_DRINK`, `TRANSPORTATION`, `GENERAL_MERCHANDISE`). If the user typed a friendly name ("food", "restaurants", "groceries") map it to the closest category. If unclear, run `list_categories` first and ask which they meant.
 
 Window: default last 90 days, or honor anything in `$ARGUMENTS` ("last 6 months", "this year", "march").
 

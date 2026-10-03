@@ -26,6 +26,6 @@ Top 5 categories:
 ...
 ```
 
-Plaid's amount convention: **positive = expense, negative = income/refund**. Preserve that in the CSV — don't invert. If writing to a file isn't possible in the current environment, print the CSV content to stdout so the user can redirect it themselves.
+BankBridge's amount convention: **positive = expense, negative = income/refund**. Preserve that in the CSV — don't invert. If writing to a file isn't possible in the current environment, print the CSV content to stdout so the user can redirect it themselves.
 
 Relay any `warnings` from tool calls before writing.

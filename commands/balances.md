@@ -28,6 +28,6 @@ Investment (if present)
   <name> (••mask)    $ X
 ```
 
-Use Unicode box-drawing minimally. Prefix negative credit balances with `−`. If Plaid returned a credit limit, show utilization as `(N%)` rounded to whole percent. Skip sections that are empty.
+Use Unicode box-drawing minimally. Prefix negative credit balances with `−`. If a credit limit is present, show utilization as `(N%)` rounded to whole percent. Skip sections that are empty.
 
 Relay any `warnings` from the tool call above the summary.
