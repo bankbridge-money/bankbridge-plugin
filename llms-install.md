@@ -9,7 +9,7 @@ Before installing, the user must:
 1. **Have a BankBridge account.** Sign up at [bankbridge.money](https://bankbridge.money) — magic-link login, no password.
 2. **Have an active subscription.** $5/mo per connected bank. Subscribe from the dashboard (any major card).
 3. **Have at least one bank connected.** Click "Connect a bank" on the dashboard — Plaid Link handles the OAuth flow (~30 seconds per bank).
-4. **Have an API token.** Copy it from [bankbridge.money/dashboard/keys](https://bankbridge.money/dashboard/keys). The token starts with `bbk_`.
+4. **Have an API token.** Copy it from [bankbridge.money/dashboard/settings](https://bankbridge.money/dashboard/settings). The token starts with `bbk_`.
 
 If any of the above is missing, tell the user to do those steps first, then come back and re-run install. Do not attempt to work around this — BankBridge cannot function without a valid, active-subscription API token attached to at least one connected bank.
 
@@ -31,7 +31,7 @@ Add this block to the user's Cline MCP settings (`cline_mcp_settings.json`):
 }
 ```
 
-Replace `<PASTE_THE_bbk_TOKEN_HERE>` with the token the user copied from their dashboard. It should look like `bbk_live_xxxxxxxxxxxx` (a long random suffix).
+Replace `<PASTE_THE_bbk_TOKEN_HERE>` with the token the user copied from their dashboard. It starts with `bbk_` followed by a long random suffix.
 
 **Ask the user for their token before writing the config.** Never invent or guess a token; a wrong token returns `401 unauthorized` on every call and the whole install looks broken.
 
@@ -39,7 +39,7 @@ Replace `<PASTE_THE_bbk_TOKEN_HERE>` with the token the user copied from their d
 
 After Cline reloads MCP servers, ask the model to run the `list_accounts` tool. A successful call returns a JSON array of the user's connected bank accounts (masked account numbers, balances, types). If it returns an error, check:
 
-- `401 Unauthorized` → the Bearer token is wrong or the subscription lapsed. Regenerate at `/dashboard/keys`.
+- `401 Unauthorized` → the Bearer token is wrong or the subscription lapsed. Regenerate at `/dashboard/settings`.
 - `402 Payment Required` → subscription is `past_due` or `canceled`. Reactivate at `/dashboard`.
 - `no banks connected` warning → user needs to connect at least one bank before any tool returns data.
 
@@ -80,7 +80,7 @@ All tools are **read-only.** BankBridge literally cannot move money, place trade
 If Cline can't reach `https://bankbridge.money/api/mcp`:
 - Check the user's network isn't blocking outbound HTTPS to `bankbridge.money`.
 - The endpoint speaks **Streamable HTTP** (single POST, chunked responses). Legacy SSE clients won't work.
-- If a request hangs > 30 seconds, retry once; if it still hangs, tell the user to check [bankbridge.money/status](https://bankbridge.money) or email `hello@greatwork.company`.
+- If a request hangs > 30 seconds, retry once; if it still hangs, tell the user to check [bankbridge.money](https://bankbridge.money) or email `hello@greatwork.company`.
 
 ## Uninstall
 
