@@ -1,20 +1,23 @@
 {
   "name": "bankbridge",
-  "version": "0.3.0",
-  "description": "Ask Claude Code anything about your finances. Read-only access to your bank accounts, transactions, and investment holdings via BankBridge.",
+  "version": "0.4.0",
+  "description": "Ask Claude anything about your finances: read-only access to your bank accounts, transactions, and investment holdings, live on every question. 19 ready-made money reviews plus 12 tools.",
   "homepage": "https://bankbridge.money",
   "author": {
-    "name": "BankBridge",
+    "name": "Great Work LLC",
+    "email": "hello@greatwork.company",
     "url": "https://bankbridge.money"
   },
   "license": "MIT",
-  "userConfig": {
-    "api_token": {
-      "type": "string",
-      "title": "BankBridge API token",
-      "description": "Pre-filled on your bankbridge.money dashboard. Starts with bbk_.",
-      "sensitive": true,
-      "required": true
-    }
-  }
+  "displayName": "BankBridge",
+  "repository": "https://github.com/bankbridge-money/bankbridge-plugin",
+  "keywords": [
+    "finance",
+    "banking",
+    "budget",
+    "spending",
+    "subscriptions",
+    "investments",
+    "read-only"
+  ]
 }

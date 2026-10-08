@@ -26,7 +26,9 @@ BankBridge is in the [Claude Connectors Directory](https://claude.ai/directory/c
 /plugin install bankbridge
 ```
 
-When prompted, paste your API token from [**bankbridge.money/dashboard**](https://bankbridge.money/dashboard?ref=github). It&rsquo;s pre-filled and copy-ready on your dashboard.
+The first time a command runs, run `/mcp` and sign in to BankBridge in your browser. No key to paste. (Before version 0.4.0 the plugin asked for an API token; it now signs in the same way as the Claude connector.)
+
+The same plugin is listed for claude.ai chat and Cowork, where the 19 commands load as skills and the server is connected from the plugin's **Connectors** tab.
 
 Prefer no plugin and no key? One command, then `/mcp` to sign in through your browser:
 
@@ -225,8 +227,8 @@ No free tier, no freemium, no trial. Just $5 per bank. It&rsquo;s fair, predicta
 1. Create an account (magic-link email, no password).
 2. Click **Subscribe** ($5/mo or $50/yr per bank). Any major card works.
 3. Connect a bank in ~30 seconds.
-4. Copy your API token from the dashboard.
-5. `/plugin install bankbridge` in Claude Code, paste the token.
+4. `/plugin install bankbridge` in Claude Code.
+5. Run `/mcp` and sign in to BankBridge.
 6. Ask your first question.
 
 End-to-end: about 90 seconds. Most of that is the bank authentication flow.
