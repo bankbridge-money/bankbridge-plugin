@@ -1,0 +1,11 @@
+{
+  "name": "bankbridge",
+  "version": "0.4.0",
+  "description": "Ask Gemini about your own money: read-only access to your US bank, credit card and investment accounts, fetched live on every question. Spending, subscriptions, cashflow and holdings. Paid, $5/mo per connected bank. Can't move money.",
+  "mcpServers": {
+    "bankbridge": {
+      "httpUrl": "https://bankbridge.money/api/mcp"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}
