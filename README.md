@@ -1,15 +1,15 @@
 # BankBridge for Claude
 
-> **Your bank accounts, transactions, and investments, in plain English, right inside Claude.**
+BankBridge is a remote MCP server that lets Claude, ChatGPT, Cursor and other AI agents read your bank accounts, credit cards and investments. Ask "how much did I spend on restaurants last month?" or "what subscriptions am I paying for?" and get answers from live data. Read-only, US banks, $5 a month per connected bank.
+
+**Works with:** Claude (claude.ai, Desktop, mobile, Cowork), Claude Code, ChatGPT, Cursor, VS Code Copilot, Codex, Gemini CLI, Windsurf and any MCP client.
 
 [![Add to Claude](https://img.shields.io/badge/Claude-Add_connector-D97757?style=flat-square&logo=claude&logoColor=white)](https://claude.ai/directory/connectors/bankbridge)
 [![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/install-mcp?name=bankbridge&config=eyJ1cmwiOiJodHRwczovL2JhbmticmlkZ2UubW9uZXkvYXBpL21jcCJ9)
 [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_server-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=bankbridge&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fbankbridge.money%2Fapi%2Fmcp%22%7D)
 [![Install in VS Code Insiders](https://img.shields.io/badge/VS_Code_Insiders-Install_server-24bfa5?style=flat-square&logo=visualstudiocode&logoColor=white)](https://insiders.vscode.dev/redirect/mcp/install?name=bankbridge&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fbankbridge.money%2Fapi%2Fmcp%22%7D)
 
-Ask Claude things like *"how much did I spend on restaurants last month?"* or *"find any subscriptions I've forgotten about"* or *"draft a budget from my actual last 3 months"* and get real answers from your real data.
-
-One account. Every bank you use. Works with Claude Code, Claude Desktop, Claude.ai, ChatGPT, Cursor, Copilot, Gemini, Codex, and everything else that speaks MCP. Read-only, US banks.
+More to ask: *"find any subscriptions I've forgotten about"*, *"draft a budget from my actual last 3 months"*, *"am I making more than I spend?"* One account covers every bank you connect.
 
 ---
 
@@ -56,6 +56,32 @@ Server URL: `https://bankbridge.money/api/mcp` (Streamable HTTP). Auth: OAuth 2.
 You&rsquo;ll need:
 - **A BankBridge account**: [sign up](https://bankbridge.money/?ref=github) ($5/mo or $50/yr per connected bank), or try the demo with sample data from the sign-in screen, no signup
 - **At least one bank connected**: linked on the dashboard in ~30 seconds
+
+## Install the skill in any agent
+
+[![skills.sh](https://img.shields.io/badge/skills.sh-bankbridge-111111?style=flat-square)](https://skills.sh/bankbridge-money/bankbridge-plugin/bankbridge)
+
+```shell
+npx skills add bankbridge-money/bankbridge-plugin        # this project (asks which agents)
+npx skills add bankbridge-money/bankbridge-plugin -g     # user-level, every project
+```
+
+Where the skill lands (to install by hand, copy `skills/bankbridge/` there):
+
+| Agent | Project folder | User folder (`-g`) |
+|---|---|---|
+| Claude Code | `.claude/skills/bankbridge/` | `~/.claude/skills/bankbridge/` |
+| Codex | `.agents/skills/bankbridge/` | `~/.codex/skills/bankbridge/` |
+| Cursor | `.agents/skills/bankbridge/` | `~/.cursor/skills/bankbridge/` |
+| GitHub Copilot | `.agents/skills/bankbridge/` | `~/.copilot/skills/bankbridge/` |
+| Gemini CLI | `.agents/skills/bankbridge/` | `~/.gemini/skills/bankbridge/` |
+| OpenCode | `.agents/skills/bankbridge/` | `~/.config/opencode/skills/bankbridge/` |
+| Cline | `.agents/skills/bankbridge/` | `~/.agents/skills/bankbridge/` |
+| Windsurf | `.windsurf/skills/bankbridge/` | `~/.codeium/windsurf/skills/bankbridge/` |
+| Goose | `.goose/skills/bankbridge/` | `~/.config/goose/skills/bankbridge/` |
+| OpenClaw | `skills/bankbridge/` | `~/.openclaw/skills/bankbridge/` |
+
+The skill tells your agent when and how to use BankBridge; the MCP server does the work, so connect that too (see Install above).
 
 ---
 
@@ -246,3 +272,5 @@ End-to-end: about 90 seconds. Most of that is the bank authentication flow.
 <p align="center">
   <sub>Built by <a href="https://greatwork.company">Great Work LLC</a>. Not a bank, not a broker. Just a bridge.</sub>
 </p>
+
+<sub>Last updated: 2026-10-09</sub>

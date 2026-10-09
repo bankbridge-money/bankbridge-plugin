@@ -1,0 +1,13 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "BankBridge",
+      "description": "Ask your AI agent about your own bank accounts, cards and investments. Read-only, live data, US banks.",
+      "skills": [
+        "bankbridge"
+      ]
+    }
+  ]
+}
