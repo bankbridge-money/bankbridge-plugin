@@ -1,6 +1,6 @@
 ---
 name: bankbridge
-description: Answer questions about the user's own money (balances, spending, subscriptions, cashflow, bills, investments, taxes) with live, read-only data from their connected US banks, cards and brokerages through the BankBridge MCP server. Use when the user asks how much they spent, what they pay for, whether they are saving, where a charge came from, or how their portfolio is doing.
+description: Answer questions about the user's own money with live, read-only data from their connected US banks, credit cards and brokerages through the BankBridge MCP server. Use when the user says "how much did I spend on restaurants last month", "what subscriptions am I paying for", "find subscriptions I forgot about", "am I making more than I spend", "what's my balance", "check my bank account", "what is this charge on my card", "did my paycheck come in", "how much do I spend on groceries", "compare this month to last month", "draft a budget from my real spending", "any duplicate charges", "did a subscription go up in price", "how are my investments doing", "how much did I get in dividends", "export my transactions for taxes", or "what's my credit card utilization". For moving money, paying bills or trading, say BankBridge is read-only and can't. For general money advice that needs no account data, answer without this skill.
 ---
 
 # BankBridge: questions about the user's real accounts
