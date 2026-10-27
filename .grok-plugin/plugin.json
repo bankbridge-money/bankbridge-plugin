@@ -1,0 +1,25 @@
+{
+  "name": "bankbridge",
+  "displayName": "BankBridge",
+  "version": "0.4.0",
+  "description": "Ask Grok about your own money: read-only access to your US bank, credit card and investment accounts through the BankBridge remote MCP server, fetched live on every question. 19 slash commands for reviews like subscriptions, cashflow and price creep.",
+  "author": {
+    "name": "Great Work LLC",
+    "email": "hello@greatwork.company",
+    "url": "https://bankbridge.money"
+  },
+  "homepage": "https://bankbridge.money",
+  "repository": "https://github.com/bankbridge-money/bankbridge-plugin",
+  "license": "MIT",
+  "keywords": [
+    "bankbridge",
+    "bankbridge mcp",
+    "bankbridge bank data",
+    "bankbridge spending",
+    "bankbridge subscriptions"
+  ],
+  "logo": "assets/icon.png",
+  "skills": "skills",
+  "commands": "commands",
+  "mcpServers": ".mcp.json"
+}
