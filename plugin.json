@@ -1,0 +1,15 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "bankbridge",
+  "version": "0.5.0",
+  "description": "Read-only access to your own US bank, credit card and investment accounts through the BankBridge hosted OAuth MCP server. Includes a skill that maps money questions to the right tool.",
+  "author": {
+    "name": "Great Work LLC",
+    "email": "hello@greatwork.company",
+    "url": "https://bankbridge.money"
+  },
+  "homepage": "https://bankbridge.money",
+  "repository": "https://github.com/bankbridge-money/bankbridge-plugin",
+  "license": "MIT",
+  "keywords": ["bankbridge", "finance", "banking", "spending", "subscriptions", "investments", "mcp", "oauth", "read-only"]
+}
