@@ -230,6 +230,8 @@ Your transactions never touch our servers. **We never store them.**
 
 BankBridge re-fetches on every question instead of caching your financial history. Details: [bankbridge.money/security](https://bankbridge.money/security?ref=github).
 
+**Network endpoints:** the plugin talks to one server, `https://bankbridge.money/api/mcp`, and you sign in to it with OAuth in your browser. It ships no scripts, hooks or binaries. To report a security issue, see [SECURITY.md](SECURITY.md).
+
 Full privacy policy → [bankbridge.money/privacy](https://bankbridge.money/privacy?ref=github)
 
 ---
