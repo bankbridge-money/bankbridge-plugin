@@ -1,0 +1,16 @@
+{
+  "name": "bankbridge",
+  "displayName": "BankBridge",
+  "version": "0.5.0",
+  "description": "Let your AI agent answer questions about your real bank data: read-only access to your bank accounts, transactions, and investment holdings, fetched live on every question. 12 MCP tools plus ready-made money reviews.",
+  "author": {
+    "name": "Great Work LLC",
+    "email": "hello@greatwork.company",
+    "url": "https://bankbridge.money"
+  },
+  "homepage": "https://bankbridge.money",
+  "repository": "https://github.com/bankbridge-money/bankbridge-plugin",
+  "license": "MIT",
+  "keywords": ["finance", "banking", "budget", "spending", "subscriptions", "investments", "read-only", "mcp"],
+  "logo": "assets/icon.png"
+}
