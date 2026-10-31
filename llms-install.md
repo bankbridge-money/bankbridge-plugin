@@ -7,7 +7,7 @@ BankBridge is a **remote, hosted MCP server**. You don't run it locally. You poi
 Before installing, the user must:
 
 1. **Have a BankBridge account.** Sign up at [bankbridge.money](https://bankbridge.money). Magic-link login, no password.
-2. **Have an active subscription.** $5/mo per connected bank. Subscribe from the dashboard (any major card).
+2. **Have an active subscription.** $8/mo per connected bank. Subscribe from the dashboard (any major card).
 3. **Have at least one bank connected.** Click "Connect a bank" on the dashboard. Your bank's secure connection opens in a popup (~30 seconds per bank).
 4. **Have an API token.** Copy it from [bankbridge.money/dashboard/settings](https://bankbridge.money/dashboard/settings). The token starts with `bbk_`.
 
