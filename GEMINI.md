@@ -5,7 +5,7 @@ BankBridge is a remote MCP server (`https://bankbridge.money/api/mcp`) that give
 ## Setup
 
 - The first time, the user runs `/mcp auth bankbridge` inside Gemini CLI and signs in at bankbridge.money in the browser. No API key is needed.
-- If a result says `setup_required` or has a NO_CONNECTIONS notice, show the user the link in the result. It finishes the subscription or connects a bank. Pricing is $5 a month per connected bank, or $50 a year.
+- If a result says `setup_required` or has a NO_CONNECTIONS notice, show the user the link in the result. It finishes the subscription or connects a bank. Pricing is $8 a month per connected bank, or $80 a year.
 - Full setup guide: https://bankbridge.money/docs/gemini-cli
 
 ## Which tool for which question
