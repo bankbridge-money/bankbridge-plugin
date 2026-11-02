@@ -1,8 +1,9 @@
 {
   "name": "bankbridge",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Ask Claude anything about your finances: read-only access to your bank accounts, transactions, and investment holdings, live on every question. 19 ready-made money reviews plus 12 tools.",
   "homepage": "https://bankbridge.money",
+  "privacyPolicyUrl": "https://bankbridge.money/privacy",
   "author": {
     "name": "Great Work LLC",
     "email": "hello@greatwork.company",
