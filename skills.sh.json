@@ -4,7 +4,7 @@
   "groupings": [
     {
       "title": "BankBridge",
-      "description": "Ask your AI agent about your own bank accounts, cards and investments. Read-only, live data, US banks.",
+      "description": "Works in any MCP agent, including local models. Ask your agent about your own bank accounts, cards and investments. Read-only, US banks.",
       "skills": [
         "bankbridge"
       ]
