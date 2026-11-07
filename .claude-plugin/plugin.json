@@ -1,6 +1,6 @@
 {
   "name": "bankbridge",
-  "version": "0.5.1",
+  "version": "0.5.3",
   "description": "Ask Claude anything about your finances: read-only access to your bank accounts, transactions, and investment holdings, live on every question. 19 ready-made money reviews plus 12 tools.",
   "homepage": "https://bankbridge.money",
   "privacyPolicyUrl": "https://bankbridge.money/privacy",

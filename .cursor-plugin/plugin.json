@@ -1,7 +1,7 @@
 {
   "name": "bankbridge",
   "displayName": "BankBridge",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "Works in any MCP agent, including local models. Read-only access to your bank accounts, transactions and investment holdings, fetched live on every question. 12 MCP tools plus ready-made money reviews.",
   "author": {
     "name": "Great Work LLC",

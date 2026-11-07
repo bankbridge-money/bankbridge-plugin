@@ -1,7 +1,7 @@
 {
   "name": "bankbridge",
   "displayName": "BankBridge",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "Works in any MCP agent, including local models. Ask Grok about your own money: read-only access to your US bank, credit card and investment accounts through the BankBridge remote MCP server, fetched live on every question. 19 slash commands for reviews like subscriptions, cashflow and price creep.",
   "author": {
     "name": "Great Work LLC",

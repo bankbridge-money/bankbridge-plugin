@@ -1,6 +1,6 @@
 {
   "name": "bankbridge",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "Works in any MCP agent, including local models. Ask Gemini CLI about your own money: read-only access to your US bank, credit card and investment accounts, fetched live on every question. Spending, subscriptions, cashflow and holdings. Paid, $5/mo per connected bank. Can't move money.",
   "mcpServers": {
     "bankbridge": {

@@ -7,7 +7,7 @@ You have access to BankBridge MCP tools. The user wants to know what they've ear
 `$ARGUMENTS` is an optional year (e.g. `2025`). Default: current year.
 
 Steps:
-1. Call `list_investment_transactions` with `type: "dividend"` (or subtype that covers dividend-like income — check `list_categories` output if unsure of the exact filter), `start_date: "<year>-01-01"`, `end_date: "<year>-12-31"`, paginating until `has_more` is false.
+1. Call `list_investment_transactions` with `type: "cash"` and `subtype: "dividend"`, `start_date: "<year>-01-01"`, `end_date: "<year>-12-31"`, paginating until `has_more` is false.
 2. Group by ticker. Sum per ticker.
 3. Compute run rate (YTD total / months elapsed × 12).
 

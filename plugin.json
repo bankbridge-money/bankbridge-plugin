@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "bankbridge",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "Works in any MCP agent, including local models. Read-only access to your own US bank, credit card and investment accounts through the BankBridge hosted MCP server, $5/mo per connected bank. Includes a skill that maps money questions to the right tool.",
   "author": {
     "name": "Great Work LLC",
